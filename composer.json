@@ -1,0 +1,30 @@
+{
+  "name": "qmister/php-lock",
+  "description": "基于php对常见的分布式锁方案封装",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "redis lock",
+    "file lock",
+    "Memcache lock",
+    "Memcached lock"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-zlib": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6|^7|^8|^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Qmister\\Lock\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Qmister\\Lock\\Test\\": "tests/"
+    }
+  }
+}
